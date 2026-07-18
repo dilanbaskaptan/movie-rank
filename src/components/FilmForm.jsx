@@ -28,9 +28,9 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-card rounded-xl p-6 space-y-4 border border-white/5"
+      className="bg-card rounded-xl p-6 space-y-4 border border-black/5 shadow-sm"
     >
-      <h2 className="font-display text-2xl tracking-wide text-gold">
+      <h2 className="font-display text-2xl tracking-wide text-blue">
         {editingFilm ? 'Kaydı düzenle' : 'Yeni film ekle'}
       </h2>
 
@@ -42,7 +42,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
             value={form.title}
             onChange={handleChange}
             placeholder="ör. Aynadaki Düşman"
-            className="w-full bg-marquee border border-white/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full bg-paper border border-black/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-blue"
             required
           />
         </div>
@@ -54,7 +54,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
             value={form.year}
             onChange={handleChange}
             placeholder="2024"
-            className="w-full bg-marquee border border-white/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full bg-paper border border-black/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-blue"
           />
         </div>
 
@@ -65,7 +65,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
             value={form.genre}
             onChange={handleChange}
             placeholder="Dram, Bilim Kurgu..."
-            className="w-full bg-marquee border border-white/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full bg-paper border border-black/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-blue"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
             name="rating"
             value={form.rating}
             onChange={handleChange}
-            className="w-full bg-marquee border border-white/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full bg-paper border border-black/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-blue"
           />
         </div>
 
@@ -90,7 +90,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
             onChange={handleChange}
             rows="2"
             placeholder="Kısa bir izlenim bırak..."
-            className="w-full bg-marquee border border-white/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-gold resize-none"
+            className="w-full bg-paper border border-black/10 rounded-lg px-3 py-2 text-ink focus:outline-none focus:ring-2 focus:ring-blue resize-none"
           />
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
       <div className="flex gap-3">
         <button
           type="submit"
-          className="bg-gold text-marquee font-semibold px-5 py-2 rounded-lg hover:brightness-110 transition"
+          className="bg-blue text-white font-semibold px-5 py-2 rounded-lg hover:brightness-110 transition"
         >
           {editingFilm ? 'Güncelle' : 'Listeye ekle'}
         </button>
@@ -106,7 +106,7 @@ export default function FilmForm({ onSave, editingFilm, onCancelEdit }) {
           <button
             type="button"
             onClick={onCancelEdit}
-            className="border border-white/20 text-muted px-5 py-2 rounded-lg hover:text-ink hover:border-white/40 transition"
+            className="border border-black/10 text-muted px-5 py-2 rounded-lg hover:text-ink hover:border-black/20 transition"
           >
             Vazgeç
           </button>

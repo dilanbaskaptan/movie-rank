@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        marquee: '#0F0E17',
-        card: '#1A1825',
-        gold: '#E3B23C',
-        velvet: '#B33951',
-        ink: '#FFFFFE',
-        muted: '#A7A9BE',
+        paper: '#EAF3FB',
+        card: '#FFFFFF',
+        blue: '#1D4ED8',
+        green: '#16A34A',
+        ink: '#0F172A',
+        muted: '#64748B',
       },
       fontFamily: {
         display: ['"Bebas Neue"', 'sans-serif'],

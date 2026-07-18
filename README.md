@@ -1,7 +1,13 @@
-# Reel Log — Film Günlüğüm
+# Movie Rank — Film Günlüğüm
+
+🔗 Canlı demo: https://reel-log.netlify.app
 
 İzlediğin filmleri ekleyip, listeleyip, düzenleyip, silebildiğin küçük bir React uygulaması.
 Veriler tarayıcının **localStorage**'ında saklanır, backend yoktur.
+
+## Ekran Görüntüsü
+
+![Movie Rank ekran görüntüsü](screenshots/movie-rank-screenshot.png)
 
 ## Kullanılan Teknolojiler
 

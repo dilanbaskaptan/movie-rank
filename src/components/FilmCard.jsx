@@ -11,7 +11,7 @@ export default function FilmCard({ film, onEdit, onDelete }) {
           )}
         </div>
         {film.genre && (
-          <span className="inline-block mt-1 text-xs uppercase tracking-wider text-velvet bg-velvet/10 px-2 py-0.5 rounded">
+          <span className="inline-block mt-1 text-xs uppercase tracking-wider text-green bg-green/10 px-2 py-0.5 rounded">
             {film.genre}
           </span>
         )}
@@ -21,20 +21,20 @@ export default function FilmCard({ film, onEdit, onDelete }) {
       </div>
 
       <div className="flex flex-col items-end gap-2 shrink-0">
-        <span className="font-display text-2xl text-gold">
+        <span className="font-display text-2xl text-blue">
           {film.rating}
           <span className="text-sm text-muted">/10</span>
         </span>
         <div className="flex gap-2">
           <button
             onClick={() => onEdit(film)}
-            className="text-xs text-muted hover:text-gold transition"
+            className="text-xs text-muted hover:text-blue transition"
           >
             Düzenle
           </button>
           <button
             onClick={() => onDelete(film.id)}
-            className="text-xs text-muted hover:text-velvet transition"
+            className="text-xs text-muted hover:text-ink transition"
           >
             Sil
           </button>

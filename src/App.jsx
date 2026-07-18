@@ -52,11 +52,11 @@ export default function App() {
     : '—'
 
   return (
-    <div className="min-h-screen bg-marquee px-4 py-10">
+    <div className="min-h-screen bg-paper px-4 py-10">
       <div className="max-w-2xl mx-auto space-y-8">
         <header className="text-center space-y-1">
           <h1 className="font-display text-5xl tracking-wide text-ink">
-            REEL <span className="text-gold">LOG</span>
+            MOVIE <span className="text-blue">RANK</span>
           </h1>
           <p className="text-muted text-sm">
             İzlediğin filmleri kaydet, puanla, hatırla.
