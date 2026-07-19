@@ -17,12 +17,10 @@ export default function App() {
   const [films, setFilms] = useState(loadFilms)
   const [editingFilm, setEditingFilm] = useState(null)
 
-  // Persist to localStorage whenever the list changes
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(films))
   }, [films])
 
-  // CREATE or UPDATE depending on whether we're editing
   function handleSave(formData) {
     if (editingFilm) {
       setFilms((prev) =>
@@ -35,13 +33,11 @@ export default function App() {
     }
   }
 
-  // DELETE
   function handleDelete(id) {
     setFilms((prev) => prev.filter((f) => f.id !== id))
     if (editingFilm?.id === id) setEditingFilm(null)
   }
 
-  // Prepare UPDATE
   function handleEdit(film) {
     setEditingFilm(film)
     window.scrollTo({ top: 0, behavior: 'smooth' })

@@ -1,6 +1,6 @@
 export default function FilmCard({ film, onEdit, onDelete }) {
   return (
-    <div className="filmstrip-edge fade-in bg-card rounded-xl pl-7 pr-5 py-4 border border-white/5 flex items-start justify-between gap-4">
+    <div className="filmstrip-edge fade-in bg-card rounded-xl pl-7 pr-5 py-4 border border-black/5 flex items-start justify-between gap-4">
       <div className="min-w-0">
         <div className="flex items-baseline gap-2 flex-wrap">
           <h3 className="font-display text-xl tracking-wide text-ink truncate">
